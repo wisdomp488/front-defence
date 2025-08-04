@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SchoolPay Gateway</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
@@ -27,20 +26,21 @@
       <span class="text-2xl font-bold text-white">SchoolPay Gateway</span>
     </div>
     <div class="space-x-6">
-      <a href="index.html" class="hover:text-purple-400 transition duration-300">Home</a>
-      <a href="features.html" class="hover:text-purple-400 transition duration-300">Features</a>
-      <a href="about.html" class="hover:text-purple-400 transition duration-300">About Us</a>
-      <a href="contact.html" class="hover:text-purple-400 transition duration-300">Contact</a>
-      <a href="faq.html" class="hover:text-purple-400 transition duration-300">FAQ</a>
+      <a href="index.html" class="text-[white] text-[white] hover:text-purple-400 transition duration-300">Home</a>
+      <a href="features.html" class="text-[white] hover:text-purple-400 transition duration-300">Features</a>
+      <a href="about.html" class="text-[white] hover:text-purple-400 transition duration-300">About Us</a>
+      <a href="contact.html" class="text-[white] hover:text-purple-400 transition duration-300">Contact</a>
+      <a href="faq.html" class="text-[white] hover:text-purple-400 transition duration-300">FAQ</a>
+      <a href="school.html" class="text-[white] hover:text-purple-400 transition duration-300">School</a>
     </div>
   </nav>
 
-  <header class="bg-gradient-to-r from-gray-800 to-gray-700 py-20 text-center relative overflow-hidden">
-    <div class="absolute inset-0 bg-[url('https://via.placeholder.com/1200x400/4B5563/1E293B?text=Abstract+Payment+Background')] bg-no-repeat bg-cover opacity-20"></div>
+  <header class=" py-20 text-center overflow-hidden bg-[url('./image/istockphoto.jpg')] bg-no-repeat bg-center w-[90%] h-[400px] bg-cover ">
+    <div class="absolute"></div>
     <div class="relative z-10">
       <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6">Welcome to SchoolPay Gateway</h1>
       <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">SchoolPay Gateway is a premier payment solution crafted for international schools, delivering a secure, efficient, and scalable platform to manage financial transactions across diverse currencies and regions. Our mission is to empower educational institutions with cutting-edge technology, ensuring seamless payment processing, robust security, and an intuitive user experience tailored to the global education sector. Trusted by schools worldwide since 2020.</p>
-      <img src="https://via.placeholder.com/500x250/4B5563/FFFFFF?text=Payment+Gateway+Dashboard" alt="Payment Gateway Dashboard" class="mx-auto rounded-lg shadow-2xl hover:shadow-3xl transition duration-300 transform hover:scale-105">
+      <img src="image/Company-vision-scaled.jpg" alt="Payment Gateway Dashboard" class="mx-auto rounded-lg shadow-2xl hover:shadow-3xl transition duration-300 transform hover:scale-105">
     </div>
   </header>
 
@@ -48,61 +48,27 @@
     <h2 class="text-4xl font-bold text-white mb-8 text-center hover-text-effect">Our Key Features</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
       <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="bg-gray-800 p-6 rounded-lg shadow-lg hover-bg-effect transform hover:-translate-y-3 transition duration-300">
-        <img src="https://via.placeholder.com/100/4B5563/FFFFFF?text=Lock" alt="Security Icon" class="mx-auto mb-4">
+        <img src="image/cyber-security-icon.jpeg" alt="Security Icon" class="mx-auto mb-4">
         <h3 class="text-xl font-semibold mb-2 text-purple-300">Secure Payment Processing</h3>
         <p class="text-gray-400">Leveraging advanced encryption and compliance with PCI DSS standards, we safeguard every transaction against fraud and data breaches with real-time monitoring.</p>
       </div>
       <div data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="bg-gray-800 p-6 rounded-lg shadow-lg hover-bg-effect transform hover:-translate-y-3 transition duration-300">
-        <img src="https://via.placeholder.com/100/4B5563/FFFFFF?text=Globe" alt="Multi-Currency Icon" class="mx-auto mb-4">
+        <img src="image/multi-currency-account.jpg" alt="Multi-Currency Icon" class="mx-auto mb-4">
         <h3 class="text-xl font-semibold mb-2 text-purple-300">Multi-Currency Support</h3>
         <p class="text-gray-400">Seamlessly handle payments in over 50 currencies, eliminating conversion complexities for global school communities with real-time exchange rate updates.</p>
       </div>
       <div data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="bg-gray-800 p-6 rounded-lg shadow-lg hover-bg-effect transform hover:-translate-y-3 transition duration-300">
-        <img src="https://via.placeholder.com/100/4B5563/FFFFFF?text=Interface" alt="Interface Icon" class="mx-auto mb-4">
+        <img src="image/images.jpeg" alt="Interface Icon" class="mx-auto mb-4">
         <h3 class="text-xl font-semibold mb-2 text-purple-300">User-Friendly Interface</h3>
         <p class="text-gray-400">An intuitive, customizable dashboard for administrators, parents, and staff, featuring real-time analytics and detailed transaction histories.</p>
       </div>
     </div>
   </section>
 
-  <div class="bg-[] w-[100%] h-[1760px]">
-    <div class="pt-[60px] flex flex-col gap-3">
-        <h2 class="font-bold text-[#003b5c] text-[30px] text-center">Academics</h2>
-        <!-- <p class="font-semibold text-[gray] mx-auto w-[95%]">We are a Top 4 Canadian university and one of the Top 100 in the world. Find out what makes our student experience so rich, meaningful and life-changing.</p> -->
-        <p class="font-semibold text-[gray] text-center ">Explore our full range of programs—whether you're pursuing an undergraduate degree, graduate studies, or a certificate, you'll find your fit here.</p>
-    </div>
-    <div class="lg:flex lg:w-[90%] mx-auto lg:mt-[50px]">
-      <div class="mt-[50px] lg:mt-0 lg:w-[35%]">
-        <div class="bg-[url('./image/undergra-post.jpeg')] w-[95%] lg:h-[70vh] h-[50vh] mx-auto bg-no-repeat bg-center bg-cover relative">
-          <h2 class="text-green-800 font-bold text-[20px] bg-[white] w-[260px] p-[8px] h-[50px] absolute bottom-9 right-0">Undergraduate Programs</h2>
-        </div>
-        <div class="bg-[white] w-[95%] h-[120px] mx-auto p-[10px]">
-          <span class="text-[gray] font-semibold w-[90%] mx-auto">An undergraduate degree is the starting point to your future. Consider it the academic foundation. It’s typically the first degree you can work on at the university level.</span>
-        </div>
-      </div>
-      <div class="mt-[30px] lg:mt-0 lg:w-[35%]">
-        <div class="bg-[url('./image/graduate-post.jpg')] w-[95%] lg:h-[70vh] h-[50vh] mx-auto bg-no-repeat bg-center bg-cover relative">
-          <h2 class="text-green-800 font-bold text-[20px] bg-[white] w-[200px] p-[8px] h-[50px] absolute bottom-9 right-0">Graduate Programs</h2>
-        </div>
-        <div class="bg-[white] w-[95%] h-[120px] mx-auto p-[10px]">
-          <span class="text-[gray] font-semibold w-[90%] mx-auto">More than 500 graduate programs, 250 specializations and 300 research areas — find out how to take your education to the next level.</span>
-        </div>
-      </div>
-      <div class="mt-[30px] lg:mt-0 lg:w-[35%]">
-        <div class="bg-[url('./image/continue-post.jpg')] w-[95%] h-[50vh] lg:h-[70vh] mx-auto bg-no-repeat bg-center bg-cover relative">
-          <h2 class="text-green-800 font-bold text-[20px] bg-[white] w-[230px] p-[8px] h-[50px] absolute bottom-9 right-0">Continuing Education</h2>
-        </div>
-        <div class="bg-[white] w-[95%] h-[100px] lg:h-[120px] mx-auto p-[10px]">
-          <p class="text-[gray] font-semibold w-[90%] mx-auto">Grow your career part-time or online with our 200+ courses and 40+ programs.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <section class="p-10 bg-gray-800">
     <h2 class="text-4xl font-bold text-white mb-8 text-center hover-text-effect">About SchoolPay Gateway</h2>
     <div data-aos="zoom-in-left" class="max-w-4xl mx-auto bg-gray-700 p-8 rounded-lg shadow-xl hover-bg-effect transition duration-300">
-      <img src="https://via.placeholder.com/300x150/4B5563/FFFFFF?text=Team+Meeting" alt="Team Meeting" class="mx-auto mb-6 rounded-lg hover:shadow-xl transition duration-300">
+      <img src="image/istockphoto.jpg" alt="Team Meeting" class="mx-auto mb-6 rounded-lg hover:shadow-xl transition duration-300">
       <p class="text-gray-300">Founded in 2020, SchoolPay Gateway is dedicated to revolutionizing payment systems in the education sector. With a team of fintech and education experts, we deliver a platform that ensures transparency, scalability, and unparalleled customer support. Our solutions address the complexities of multi-currency transactions and diverse payment methods, fostering a global network of schools focused on educational excellence rather than financial burdens.</p>
     </div>
   </section>
@@ -110,7 +76,7 @@
   <section class="p-10">
     <h2 class="text-4xl font-bold text-white mb-8 text-center hover-text-effect">Get in Touch</h2>
     <div class="max-w-2xl mx-auto bg-gray-800 p-8 rounded-lg shadow-lg hover-bg-effect transition duration-300">
-      <img src="https://via.placeholder.com/200x100/4B5563/FFFFFF?text=Support+Team" alt="Support Team" class="mx-auto mb-6 rounded-lg hover:shadow-xl transition duration-300">
+      <img src="image/customer-support-solution-services-.png" alt="Support Team" class="mx-auto mb-6 rounded-lg hover:shadow-xl transition duration-300">
       <p class="text-gray-400">Our expert support team is available 24/7 to assist with inquiries, technical support, or seamless integration into your existing systems. Contact us to discover how SchoolPay Gateway can elevate your school's financial operations.</p>
     </div>
   </section>
@@ -118,7 +84,7 @@
   <section data-aos="zoom-in-left" class="p-10 bg-gray-800">
     <h2 class="text-4xl font-bold text-white mb-8 text-center hover-text-effect">Frequently Asked Questions</h2>
     <div class="max-w-2xl mx-auto bg-gray-700 p-8 rounded-lg shadow-lg hover-bg-effect transition duration-300">
-      <img src="https://via.placeholder.com/250x120/4B5563/FFFFFF?text=FAQ+Illustration" alt="FAQ Illustration" class="mx-auto mb-6 rounded-lg hover:shadow-xl transition duration-300">
+      <img src="image/istockphoto-13.jpg" alt="FAQ Illustration" class="mx-auto mb-6 rounded-lg hover:shadow-xl transition duration-300">
       <p class="text-gray-400">Explore detailed answers to common questions about security protocols, transaction fees, currency support, and more. Visit our <a href="faq.html" class="text-purple-400 hover:text-purple-300 transition duration-300">FAQ page</a> for comprehensive insights.</p>
     </div>
   </section>

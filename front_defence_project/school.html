@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏠 SchoolPay Gateway</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <style>
+        /* Custom animation for accordion */
+        .accordion-content {
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .accordion-content:not(.hidden) {
+            max-height: 500px; /* Adjust based on content */
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <header class="bg-white shadow-lg sticky top-0 z-20">
+        <div class="container mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl sm:text-3xl font-extrabold text-purple-600 flex items-center tracking-tight">🏠 SchoolPay Gateway</a>
+            <nav class="flex flex-wrap gap-2 sm:gap-6">
+                <a href="index.html" class="text-gray-700 hover:text-purple-500 text-sm sm:text-base font-medium transition-colors duration-200">Home</a>
+                <a href="features.html" class="text-gray-700 hover:text-purple-500 text-sm sm:text-base font-medium transition-colors duration-200">Features</a>
+                <a href="about.html" class="text-gray-700 hover:text-purple-500 text-sm sm:text-base font-medium transition-colors duration-200">About Us</a>
+                <a href="schools.html" class="text-gray-700 hover:text-purple-500 text-sm sm:text-base font-medium transition-colors duration-200">Schools</a>
+                <a href="contact.html" class="text-gray-700 hover:text-purple-500 text-sm sm:text-base font-medium transition-colors duration-200">Contact</a>
+                <a href="faq.html" class="text-gray-700 hover:text-purple-500 text-sm sm:text-base font-medium transition-colors duration-200">FAQ</a>
+                <a href="school.html" class="text-gray-700 hover:text-purple-500 text-sm sm:text-base font-medium transition-colors duration-200">School</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 py-12">
+        <section class="mb-12 text-center">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">Discover Our Partner Schools</h1>
+            <p class="text-gray-600 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">Explore our global network of international and local schools offering diverse higher degree programs, including Bachelor’s and Master’s degrees. Filter by name or course to find your ideal academic institution.</p>
+        </section>
+
+        <div class="bg-[] w-[100%] h-[1660px] lg:h-[800px] md:h-[1500px]">
+            <div class="pt-[40px] flex flex-col gap-3">
+                <h2 class="font-bold text-[#003b5c] text-[30px] text-center">Academics</h2>
+                
+            </div>
+            <div class="lg:flex lg:w-[100%] mx-auto md:mt-12 lg:mt-[50px] md:w-[100%] md:grid md:grid-cols-2">
+              <div class="mt-[50px] lg:mt-0 lg:w-[35%] md:w-[100%] md:mt-0">
+                <div class="bg-[url('./image/undergra-post.jpeg')] w-[95%] lg:h-[70vh] h-[50vh] md:h-[40vh] mx-auto bg-no-repeat bg-center bg-cover relative">
+                  <h2 class="text-green-800 font-bold text-[20px] bg-[white] w-[260px] p-[8px] h-[50px] absolute bottom-9 right-0">Undergraduate Programs</h2>
+                </div>
+                <div class="bg-[white] w-[95%] h-[150px] lg:h-[] mx-auto p-[10px]">
+                  <!-- <span class="text-[gray] font-semibold w-[90%] mx-auto">An undergraduate degree is the starting point to your future. Consider it the academic foundation. It’s typically the first degree you can work on at the university level.</span> -->
+                  <p class="text-gray-600 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">An undergraduate degree is the starting point to your future. Consider it the academic foundation. It’s typically the first degree you can work on at the university level.</p>
+                </div>
+              </div>
+              <div class="mt-[30px] lg:mt-0 lg:w-[35%] md:w-[100%] md:mt-0">
+                <div class="bg-[url('./image/graduate-post.jpg')] w-[95%] lg:h-[70vh] h-[50vh] md:h-[40vh] mx-auto bg-no-repeat bg-center bg-cover relative">
+                  <h2 class="text-green-800 font-bold text-[20px] bg-[white] w-[200px] p-[8px] h-[50px] absolute bottom-9 right-0">Graduate Programs</h2>
+                </div>
+                <div class="bg-[white] w-[95%] h-[150px] mx-auto p-[10px]">
+                  <!-- <span class="text-[gray] font-semibold w-[90%] mx-auto">More than 500 graduate programs, 250 specializations and 300 research areas — find out how to take your education to the next level.</span> -->
+                  <p class="text-gray-600 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">More than 500 graduate programs, 250 specializations and 300 research areas — find out how to take your education to the next level.</p>
+                </div>
+              </div>
+              <div class="mt-[30px] lg:mt-0 lg:w-[35%] d:w-[60%] md:grid col-span-2">
+                <div class="bg-[url('./image/continue-post.jpg')] w-[95%] h-[50vh] lg:h-[70vh] mx-auto bg-no-repeat bg-center bg-cover relative">
+                  <h2 class="text-green-800 font-bold text-[20px] bg-[white] w-[230px] p-[8px] h-[50px] absolute bottom-9 right-0">Continuing Education</h2>
+                </div>
+                <div class="bg-[white] w-[95%] h-[100px] lg:h-[150px] mx-auto p-[20px]">
+                  <!-- <p class="text-[gray] font-semibold w-[90%] mx-auto">Grow your career part-time or online with our 200+ courses and 40+ programs.</p> -->
+                  <p class="text-gray-600 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed">Grow your career part-time or online with our 200+ courses and 40+ programs.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <section class="mb-12">
+            <div class="flex flex-col sm:flex-row gap-6 mb-10 bg-white p-6 rounded-lg shadow-md">
+                <div class="flex-1">
+                    <label for="alphabet-filter" class="block text-sm font-medium text-gray-700 mb-2">Filter by Alphabet</label>
+                    <select id="alphabet-filter" class="w-full p-3 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition">
+                        <option value="all">All</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                        <option value="E">E</option>
+                        <option value="F">F</option>
+                        <option value="G">G</option>
+                        <option value="H">H</option>
+                        <option value="I">I</option>
+                        <option value="J">J</option>
+                    </select>
+                </div>
+                <div class="flex-1">
+                    <label for="course-filter" class="block text-sm font-medium text-gray-700 mb-2">Filter by Course</label>
+                    <select id="course-filter" class="w-full p-3 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-purple-500 focus:border-purple-500 transition">
+                        <option value="all">All</option>
+                        <option value="BSc Computer Science">BSc Computer Science</option>
+                        <option value="MSc Data Science">MSc Data Science</option>
+                        <option value="BA Literature">BA Literature</option>
+                        <option value="MA History">MA History</option>
+                        <option value="BSc Physics">BSc Physics</option>
+                        <option value="MSc Economics">MSc Economics</option>
+                        <option value="BFA Art and Design">BFA Art and Design</option>
+                        <option value="BSc Biology">BSc Biology</option>
+                        <option value="MEd Education">MEd Education</option>
+                        <option value="BSc Mathematics">BSc Mathematics</option>
+                        <option value="BA Geography">BA Geography</option>
+                        <option value="BMus Music">BMus Music</option>
+                        <option value="MSc Artificial Intelligence">MSc Artificial Intelligence</option>
+                        <option value="BA Psychology">BA Psychology</option>
+                        <option value="MSc Environmental Science">MSc Environmental Science</option>
+                        <option value="BEng Mechanical Engineering">BEng Mechanical Engineering</option>
+                        <option value="MA International Relations">MA International Relations</option>
+                        <option value="BSc Chemistry">BSc Chemistry</option>
+                        <option value="MFA Creative Writing">MFA Creative Writing</option>
+                        <option value="BBA Business Administration">BBA Business Administration</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section id="school-list" class="space-y-6">
+            <!-- School entries will be dynamically populated by JavaScript -->
+        </section>
+    </main>
+
+    <footer class="bg-white shadow-lg mt-12 py-8">
+        <div class="container mx-auto px-4 sm:px-6 text-center">
+            <p class="text-gray-600 text-sm sm:text-base">SchoolPay Gateway © 2023 All rights reserved. | <a href="#" class="text-purple-600 hover:text-purple-500 transition">Privacy Policy</a> | <a href="#" class="text-purple-600 hover:text-purple-500 transition">Terms of Service</a></p>
+            <div class="mt-4 flex justify-center space-x-6">
+                <a href="#" class="text-gray-600 hover:text-purple-500 text-lg transition">🐦</a>
+                <a href="#" class="text-gray-600 hover:text-purple-500 text-lg transition">🔗</a>
+                <a href="#" class="text-gray-600 hover:text-purple-500 text-lg transition">Ⓜ</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const schools = [
+            { name: "Acacia International School", courses: ["BSc Computer Science", "MSc Data Science", "BA Literature", "MA History", "BSc Physics", "MSc Economics", "BFA Art and Design", "BSc Biology", "MEd Education", "BSc Mathematics"] },
+            { name: "Bright Future Academy", courses: ["BSc Mathematics", "BSc Physics", "BSc Biology", "MSc Artificial Intelligence", "BA Psychology", "MA International Relations", "BSc Chemistry", "MFA Creative Writing", "BBA Business Administration", "BA Geography"] },
+            { name: "Cedar Grove School", courses: ["BSc Computer Science", "MSc Environmental Science", "BA Literature", "MA History", "BEng Mechanical Engineering", "BFA Art and Design", "BMus Music", "MEd Education", "BA Psychology", "BSc Chemistry"] },
+            { name: "Delta International School", courses: ["BSc Biology", "MSc Data Science", "BA Geography", "MA International Relations", "BSc Mathematics", "BBA Business Administration", "BFA Art and Design", "MFA Creative Writing", "BSc Physics", "MEd Education"] },
+            { name: "Eagle Heights Academy", courses: ["BSc Computer Science", "MSc Economics", "BA Literature", "BSc Chemistry", "BEng Mechanical Engineering", "BMus Music", "BA Psychology", "MSc Artificial Intelligence", "BSc Biology", "MA History"] },
+            { name: "Falcon Crest School", courses: ["BSc Mathematics", "MSc Environmental Science", "BA Geography", "BFA Art and Design", "MEd Education", "BBA Business Administration", "BSc Physics", "MA International Relations", "BMus Music", "BSc Computer Science"] },
+            { name: "Global Horizons School", courses: ["BSc Biology", "MSc Data Science", "BA Literature", "MSc Economics", "BEng Mechanical Engineering", "BA Psychology", "MFA Creative Writing", "BSc Chemistry", "MA History", "BSc Mathematics"] },
+            { name: "Harmony International School", courses: ["BSc Physics", "MSc Artificial Intelligence", "BA Geography", "BFA Art and Design", "MEd Education", "BBA Business Administration", "BMus Music", "BA Psychology", "MSc Environmental Science", "MA History"] },
+            { name: "Ivy League Academy", courses: ["BSc Computer Science", "MSc Data Science", "BA Literature", "BSc Mathematics", "BEng Mechanical Engineering", "MFA Creative Writing", "BSc Biology", "MSc Economics", "BA Psychology", "BSc Chemistry"] },
+            { name: "Juniper International School", courses: ["BSc Physics", "MA International Relations", "BFA Art and Design", "BMus Music", "MEd Education", "BA Geography", "BBA Business Administration", "MSc Artificial Intelligence", "BSc Biology", "BA Literature"] },
+            { name: "Aurora Academy", courses: ["BSc Computer Science", "MSc Environmental Science", "MA History", "BSc Chemistry", "BEng Mechanical Engineering", "BA Psychology", "MFA Creative Writing", "BSc Mathematics", "MSc Data Science", "BMus Music"] },
+            { name: "Beacon Hill School", courses: ["BSc Biology", "MEd Education", "BA Literature", "MSc Economics", "BA Geography", "BBA Business Administration", "BSc Physics", "MA International Relations", "BFA Art and Design", "MSc Artificial Intelligence"] },
+            { name: "Crestview International", courses: ["BSc Computer Science", "MSc Data Science", "BMus Music", "BSc Chemistry", "BA Psychology", "MEd Education", "BSc Mathematics", "MA History", "BEng Mechanical Engineering", "BA Literature"] },
+            { name: "Dawn International School", courses: ["BSc Physics", "MFA Creative Writing", "BA Geography", "MSc Economics", "BBA Business Administration", "BFA Art and Design", "MSc Environmental Science", "BSc Biology", "MA International Relations", "BMus Music"] },
+            { name: "Elmwood Academy", courses: ["BSc Computer Science", "MSc Artificial Intelligence", "BA Literature", "BSc Mathematics", "MEd Education", "BA Psychology", "BEng Mechanical Engineering", "BSc Chemistry", "MSc Data Science", "BA Geography"] },
+            { name: "Fernwood School", courses: ["BSc Biology", "MA History", "BFA Art and Design", "MSc Economics", "BMus Music", "BBA Business Administration", "BSc Physics", "MFA Creative Writing", "BA Psychology", "MEd Education"] },
+            { name: "Greenwood International", courses: ["BSc Computer Science", "MSc Environmental Science", "BA Literature", "BSc Chemistry", "MA International Relations", "BSc Mathematics", "BEng Mechanical Engineering", "MSc Data Science", "BA Geography", "BMus Music"] },
+            { name: "Haven Academy", courses: ["BSc Physics", "MEd Education", "BA Psychology", "MSc Artificial Intelligence", "BFA Art and Design", "BBA Business Administration", "BSc Biology", "MA History", "MFA Creative Writing", "BSc Computer Science"] },
+            { name: "Iris International School", courses: ["BSc Mathematics", "MSc Economics", "BA Literature", "BMus Music", "BEng Mechanical Engineering", "BA Geography", "MSc Data Science", "BSc Chemistry", "MEd Education", "BFA Art and Design"] },
+            { name: "Jade Academy", courses: ["BSc Computer Science", "MA International Relations", "BSc Biology", "MFA Creative Writing", "BA Psychology", "MSc Environmental Science", "BSc Physics", "BBA Business Administration", "BA Literature", "MEd Education"] },
+            { name: "Kingswood School", courses: ["BSc Mathematics", "MSc Artificial Intelligence", "BFA Art and Design", "BMus Music", "BEng Mechanical Engineering", "MA History", "BSc Chemistry", "MSc Data Science", "BA Geography", "BSc Computer Science"] },
+            { name: "Liberty International", courses: ["BSc Biology", "MSc Economics", "BA Literature", "BA Psychology", "MEd Education", "BBA Business Administration", "MFA Creative Writing", "BSc Physics", "MA International Relations", "BMus Music"] },
+            { name: "Maple Grove Academy", courses: ["BSc Computer Science", "MSc Environmental Science", "BA Geography", "BSc Mathematics", "BEng Mechanical Engineering", "BFA Art and Design", "MSc Data Science", "BA Literature", "MEd Education", "BSc Chemistry"] },
+            { name: "Nexus International School", courses: ["BSc Physics", "MSc Artificial Intelligence", "BA Literature", "BMus Music", "MA History", "BBA Business Administration", "BSc Biology", "MFA Creative Writing", "BA Psychology", "MSc Economics"] },
+            { name: "Oakridge Academy", courses: ["BSc Computer Science", "MEd Education", "BA Geography", "BSc Chemistry", "BEng Mechanical Engineering", "MSc Data Science", "BFA Art and Design", "BSc Mathematics", "MA International Relations", "BA Literature"] },
+            { name: "Pinnacle International", courses: ["BSc Biology", "MSc Environmental Science", "BMus Music", "MFA Creative Writing", "BA Psychology", "MSc Economics", "BSc Physics", "BBA Business Administration", "BA Literature", "MEd Education"] },
+            { name: "Quest Academy", courses: ["BSc Computer Science", "MSc Artificial Intelligence", "BA Geography", "BSc Mathematics", "MA History", "BEng Mechanical Engineering", "BFA Art and Design", "MSc Data Science", "BA Psychology", "BMus Music"] },
+            { name: "Riverstone School", courses: ["BSc Physics", "MSc Economics", "BA Literature", "MEd Education", "BBA Business Administration", "BSc Chemistry", "MFA Creative Writing", "BA Geography", "BSc Biology", "MA International Relations"] },
+            { name: "Starlight International", courses: ["BSc Computer Science", "BMus Music", "BEng Mechanical Engineering", "MSc Data Science", "BA Psychology", "MSc Environmental Science", "BFA Art and Design", "BSc Mathematics", "MA History", "BSc Biology"] },
+            { name: "Twilight Academy", courses: ["BSc Physics", "MFA Creative Writing", "BA Literature", "MEd Education", "BA Geography", "MSc Economics", "BBA Business Administration", "BSc Computer Science", "BMus Music", "MSc Artificial Intelligence"] }
+        ];
+
+        function displaySchools(schoolsToShow) {
+            const schoolList = document.getElementById('school-list');
+            schoolList.innerHTML = '';
+            schoolsToShow.forEach((school, index) => {
+                const schoolCard = document.createElement('div');
+                schoolCard.className = 'bg-white rounded-lg shadow-lg overflow-hidden';
+                schoolCard.innerHTML = `
+                    <button class="w-full text-left p-5 bg-gradient-to-r from-purple-100 to-purple-50 hover:from-purple-200 hover:to-purple-100 transition flex justify-between items-center" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('svg').classList.toggle('rotate-180');">
+                        <h3 class="text-lg sm:text-xl font-semibold text-gray-900">${school.name}</h3>
+                        <svg class="w-5 h-5 transform transition-transform text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="p-6 accordion-content hidden bg-gray-50">
+                        <p class="text-gray-700 font-medium mb-4 text-sm sm:text-base">Higher Degree Courses Offered:</p>
+                        <ul class="list-disc list-inside text-gray-600 text-sm sm:text-base mb-6 space-y-2">
+                            ${school.courses.map(course => `<li>${course}</li>`).join('')}
+                        </ul>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="payment.html?school=${encodeURIComponent(school.name)}" class="inline-block bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700 transition text-sm sm:text-base font-medium text-center">Enroll Now</a>
+                            <a href="school-info.html?school=${encodeURIComponent(school.name)}" class="inline-block bg-gray-700 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition text-sm sm:text-base font-medium text-center">More Info</a>
+                        </div>
+                    </div>
+                `;
+                schoolList.appendChild(schoolCard);
+            });
+        }
+
+        function filterSchools() {
+            const alphabetFilter = document.getElementById('alphabet-filter').value;
+            const courseFilter = document.getElementById('course-filter').value;
+
+            let filteredSchools = schools;
+
+            if (alphabetFilter !== 'all') {
+                filteredSchools = filteredSchools.filter(school => school.name.startsWith(alphabetFilter));
+            }
+
+            if (courseFilter !== 'all') {
+                filteredSchools = filteredSchools.filter(school => school.courses.includes(courseFilter));
+            }
+
+            displaySchools(filteredSchools);
+        }
+
+        document.getElementById('alphabet-filter').addEventListener('change', filterSchools);
+        document.getElementById('course-filter').addEventListener('change', filterSchools);
+
+        // Initial display
+        displaySchools(schools);
+    </script>
+</body>
+</html>
